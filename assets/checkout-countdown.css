@@ -1,0 +1,63 @@
+.checkout-countdown-wrapper.checkout-countdown-bar {
+	text-align: center;
+	padding: 15px 0;
+	width: 100%;
+	z-index: 9999;
+}
+.checkout-countdown-is-hidden {
+	display: none;
+}
+@-webkit-keyframes checkout-countdown-loading-dot-keyframes {
+	0% {
+		opacity: 0.4;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.2, 1.2);
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		opacity: 0.4;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+@keyframes checkout-countdown-loading-dot-keyframes {
+	0% {
+		opacity: 0.4;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+	50% {
+		opacity: 1;
+		-webkit-transform: scale(1.2, 1.2);
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		opacity: 0.4;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+.checkout-countdown-loading {
+	width: 100%;
+}
+.checkout-countdown-loading-dot {
+	-webkit-animation: checkout-countdown-loading-dot-keyframes 1.5s infinite ease-in-out;
+	animation: checkout-countdown-loading-dot-keyframes 1.5s infinite ease-in-out;
+	background-color: rgb(209, 209, 209);
+	border-radius: 10px;
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+}
+.checkout-countdown-loading-dot:nth-child(2) {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.checkout-countdown-loading-dot:nth-child(3) {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
